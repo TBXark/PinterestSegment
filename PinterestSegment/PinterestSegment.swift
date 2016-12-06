@@ -10,16 +10,14 @@ import UIKit
 
 public struct PinterestSegmentStyle {
 
-    public var coverBackgroundColor = UIColor(white: 0.95, alpha: 1)
+    public var indicatorColor = UIColor(white: 0.95, alpha: 1)
     public var titleMargin: CGFloat = 15
     public var titlePendingHorizontal: CGFloat = 14
     public var titlePendingVertical: CGFloat = 14
     public var titleFont = UIFont.boldSystemFont(ofSize: 14)
     public var normalTitleColor = UIColor.lightGray
     public var selectedTitleColor = UIColor.darkGray
-
     public init() {}
-
 }
 
 
@@ -55,9 +53,9 @@ public class PinterestSegment: UIControl {
 
     fileprivate let selectContent =  UIView()
     fileprivate var indicator: UIView = {
-        let cover = UIView()
-        cover.layer.masksToBounds = true
-        return cover
+        let ind = UIView()
+        ind.layer.masksToBounds = true
+        return ind
     }()
     fileprivate let selectedLabelsMaskView: UIView = {
         let cover = UIView()
@@ -91,6 +89,7 @@ public class PinterestSegment: UIControl {
         for (i, label) in titleLabels.enumerated() {
             if x >= label.frame.minX && x <= label.frame.maxX {
                 setSelectIndex(index: i, animated: true)
+                break
             }
         }
 
@@ -173,25 +172,25 @@ extension PinterestSegment {
             titleX = (titleLabels.last?.frame.maxX ?? 0 ) + style.titleMargin
             let rect = CGRect(x: titleX, y: titleY, width: titleW, height: titleH)
 
-            let label = UILabel(frame: CGRect.zero)
-            label.tag = index
-            label.text = title
-            label.textColor = style.normalTitleColor
-            label.font = style.titleFont
-            label.textAlignment = .center
-            label.frame = rect
+            let backLabel = UILabel(frame: CGRect.zero)
+            backLabel.tag = index
+            backLabel.text = title
+            backLabel.textColor = style.normalTitleColor
+            backLabel.font = style.titleFont
+            backLabel.textAlignment = .center
+            backLabel.frame = rect
 
-            let select = UILabel(frame: CGRect.zero)
-            select.tag = index
-            select.text = title
-            select.textColor = style.selectedTitleColor
-            select.font = style.titleFont
-            select.textAlignment = .center
-            select.frame = rect
+            let frontLabel = UILabel(frame: CGRect.zero)
+            frontLabel.tag = index
+            frontLabel.text = title
+            frontLabel.textColor = style.selectedTitleColor
+            frontLabel.font = style.titleFont
+            frontLabel.textAlignment = .center
+            frontLabel.frame = rect
 
-            titleLabels.append(label)
-            scrollView.addSubview(label)
-            selectContent.addSubview(select)
+            titleLabels.append(backLabel)
+            scrollView.addSubview(backLabel)
+            selectContent.addSubview(frontLabel)
 
             if index == titles.count - 1 {
                 scrollView.contentSize.width = rect.maxX
@@ -200,7 +199,7 @@ extension PinterestSegment {
         }
 
         // Set Cover
-        indicator.backgroundColor = style.coverBackgroundColor
+        indicator.backgroundColor = style.indicatorColor
         scrollView.addSubview(indicator)
         scrollView.addSubview(selectContent)
 
