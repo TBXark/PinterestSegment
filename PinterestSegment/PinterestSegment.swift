@@ -39,7 +39,7 @@ public class PinterestSegment: UIControl {
         }
     }
     public var valueChange: ((Int) -> Void)?
-    fileprivate var titleLabel: [UILabel] = []
+    fileprivate var titleLabels: [UILabel] = []
     fileprivate(set) var selectIndex = 0
 
 
@@ -88,7 +88,7 @@ public class PinterestSegment: UIControl {
 
     @objc fileprivate func handleTapGesture(_ gesture: UITapGestureRecognizer) {
         let x = gesture.location(in: self).x + scrollView.contentOffset.x
-        for (i, label) in titleLabel.enumerated() {
+        for (i, label) in titleLabels.enumerated() {
             if x >= label.frame.minX && x <= label.frame.maxX {
                 setSelectIndex(index: i, animated: true)
             }
@@ -103,9 +103,9 @@ extension PinterestSegment {
 
     public func setSelectIndex(index: Int,animated: Bool = true) {
 
-        guard index != selectIndex, index >= 0 , index < titleLabel.count else { return }
+        guard index != selectIndex, index >= 0 , index < titleLabels.count else { return }
 
-        let currentLabel = titleLabel[index]
+        let currentLabel = titleLabels[index]
         let offSetX = min(max(0, currentLabel.center.x - bounds.width / 2),
                           max(0, scrollView.contentSize.width - bounds.width))
         scrollView.setContentOffset(CGPoint(x:offSetX, y: 0), animated: true)
@@ -116,7 +116,8 @@ extension PinterestSegment {
                 var rect = self.indicator.frame
                 rect.origin.x = currentLabel.frame.origin.x
                 rect.size.width = currentLabel.frame.size.width
-                self.setIndicatorFrame(rect)            })
+                self.setIndicatorFrame(rect)
+            })
 
         } else {
             var rect = indicator.frame
@@ -147,7 +148,7 @@ extension PinterestSegment {
 
         scrollView.subviews.forEach { $0.removeFromSuperview() }
         selectContent.subviews.forEach { $0.removeFromSuperview() }
-        titleLabel.removeAll()
+        titleLabels.removeAll()
 
         // Set titles
         let font  = style.titleFont
@@ -169,7 +170,7 @@ extension PinterestSegment {
         for (index, title) in titles.enumerated() {
 
             let titleW = toToSize(title) + style.titlePendingHorizontal * 2
-            titleX = (titleLabel.last?.frame.maxX ?? 0 ) + style.titleMargin
+            titleX = (titleLabels.last?.frame.maxX ?? 0 ) + style.titleMargin
             let rect = CGRect(x: titleX, y: titleY, width: titleW, height: titleH)
 
             let label = UILabel(frame: CGRect.zero)
@@ -188,7 +189,7 @@ extension PinterestSegment {
             select.textAlignment = .center
             select.frame = rect
 
-            titleLabel.append(label)
+            titleLabels.append(label)
             scrollView.addSubview(label)
             selectContent.addSubview(select)
 
@@ -203,9 +204,9 @@ extension PinterestSegment {
         scrollView.addSubview(indicator)
         scrollView.addSubview(selectContent)
 
-        let coverX = titleLabel[0].frame.origin.x
+        let coverX = titleLabels[0].frame.origin.x
         let coverY = (bounds.size.height - coverH) / 2
-        let coverW = titleLabel[0].frame.size.width
+        let coverW = titleLabels[0].frame.size.width
 
         let indRect = CGRect(x: coverX, y: coverY, width: coverW, height: coverH)
         setIndicatorFrame(indRect)
