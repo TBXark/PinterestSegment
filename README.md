@@ -50,7 +50,7 @@ github "tbxark/PinterestSegment"
 
 let  style = PinterestSegmentStyle()
 
-style.coverBackgroundColor = UIColor(white: 0.95, alpha: 1)
+style.indicatorColor = UIColor(white: 0.95, alpha: 1)
 style.titleMargin: CGFloat = 15
 style.titlePendingHorizontal: CGFloat = 14
 style.titlePendingVertical: CGFloat = 14
