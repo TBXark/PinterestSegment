@@ -9,7 +9,7 @@
 [![Support](https://img.shields.io/badge/support-iOS%208%2B%20-blue.svg?style=flat)](https://www.apple.com/nl/ios/)
 
 
-<!-- ![](demo.gif) -->
+![](demo.gif)
 
 ## Requirements
 

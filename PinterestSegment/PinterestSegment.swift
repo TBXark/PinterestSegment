@@ -152,8 +152,8 @@ extension PinterestSegment {
         // Set titles
         let font  = style.titleFont
         var titleX: CGFloat = 0.0
-        let titleY: CGFloat = 0.0
         let titleH = font.lineHeight
+        let titleY: CGFloat = ( bounds.height - font.lineHeight)/2
         let coverH: CGFloat = font.lineHeight + style.titlePendingVertical
 
         selectedLabelsMaskView.backgroundColor = UIColor.black
