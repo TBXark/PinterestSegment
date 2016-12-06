@@ -1,5 +1,5 @@
 # PinterestSegment
->  这是一个高仿 Pinterest app 里面的 Segment 控件, 带有遮罩的动画功能
+>  A Pinterest-like segment control with masking animation.
 
 [![Swift Version][swift-image]][swift-url]
 [![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://raw.githubusercontent.com/TBXark/PinterestSegment/master/LICENSE)
