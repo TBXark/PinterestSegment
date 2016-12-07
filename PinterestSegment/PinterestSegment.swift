@@ -38,7 +38,7 @@ public class PinterestSegment: UIControl {
     }
     public var valueChange: ((Int) -> Void)?
     fileprivate var titleLabels: [UILabel] = []
-    fileprivate(set) var selectIndex = 0
+    public fileprivate(set) var selectIndex = 0
 
 
     fileprivate  let scrollView: UIScrollView = {
@@ -193,8 +193,8 @@ extension PinterestSegment {
             selectContent.addSubview(frontLabel)
 
             if index == titles.count - 1 {
-                scrollView.contentSize.width = rect.maxX
-                selectContent.frame.size.width = rect.maxX
+                scrollView.contentSize.width = rect.maxX + style.titleMargin
+                selectContent.frame.size.width = rect.maxX + style.titleMargin
             }
         }
 
