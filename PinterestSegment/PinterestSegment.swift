@@ -48,6 +48,9 @@ public class PinterestSegment: UIControl {
         view.isPagingEnabled = false
         view.scrollsToTop = false
         view.isScrollEnabled = true
+        view.contentInset = UIEdgeInsets.zero
+        view.contentOffset = CGPoint.zero
+        view.scrollsToTop = false
         return view
     }()
 
@@ -74,6 +77,7 @@ public class PinterestSegment: UIControl {
         self.style = segmentStyle
         self.titles = titles
         super.init(frame: frame)
+        addSubview(UIView()) // fix automaticallyAdjustsScrollViewInsets bug
         addSubview(scrollView)
         reloadData()
     }
@@ -216,5 +220,7 @@ extension PinterestSegment {
 
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(PinterestSegment.handleTapGesture(_:)))
         addGestureRecognizer(tapGesture)
+        setSelectIndex(index: 0)
+        
     }
 }

@@ -13,7 +13,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+//        automaticallyAdjustsScrollViewInsets = false
         let w = view.frame.width
         let s = PinterestSegment(frame: CGRect(x: 20, y: 200, width: w - 40, height: 40), titles: ["Everything", "Geek", "Humor", "Art", "Food", "Home", "DIY", "Wemoent' Style", "Man's Style", "Beauty", "Travel"])
         s.style.titleFont = UIFont.systemFont(ofSize: 14, weight: 5)
