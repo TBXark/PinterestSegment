@@ -70,6 +70,9 @@ segment.valueChange = { index in
 
 ## Release History
 
+* 1.0.1
+  fix bug
+
 * 1.0.0
   first commit
 
