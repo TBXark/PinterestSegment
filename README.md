@@ -66,7 +66,9 @@ segment.valueChange = { index in
 
 ```
 
-
+## Article
+  
+  Fix automaticallyAdjustsScrollViewInsets bug in PinterestSegment [http://tbxark.site/2016/12/08/2016-12-08-Swift-Pinterst/](http://tbxark.site/2016/12/08/2016-12-08-Swift-Pinterst/)
 
 ## Release History
 
