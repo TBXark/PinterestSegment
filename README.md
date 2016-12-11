@@ -30,7 +30,7 @@ pod 'PinterestSegment'
 
 To get the full benefits import `PinterestSegment` wherever you import UIKit
 
-``` swift
+```swift
 import UIKit
 import PinterestSegment
 ```
@@ -46,8 +46,7 @@ github "tbxark/PinterestSegment"
 
 ## Usage example
 
-```
-
+```swift
 let  style = PinterestSegmentStyle()
 
 style.indicatorColor = UIColor(white: 0.95, alpha: 1)
@@ -63,7 +62,6 @@ let segment = PinterestSegment(frame: CGRect(x: 20, y: 200, width: w - 40, heigh
 segment.valueChange = { index in
   // Do something here
 }
-
 ```
 
 ## Article
