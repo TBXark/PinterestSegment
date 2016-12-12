@@ -30,14 +30,14 @@ pod 'PinterestSegment'
 
 To get the full benefits import `PinterestSegment` wherever you import UIKit
 
-``` swift
+```swift
 import UIKit
 import PinterestSegment
 ```
 #### Carthage
 Create a `Cartfile` that lists the framework and run `carthage update`. Follow the [instructions](https://github.com/Carthage/Carthage#if-youre-building-for-ios) to add `$(SRCROOT)/Carthage/Build/iOS/PinterestSegment.framework` to an iOS project.
 
-```
+```ruby
 github "tbxark/PinterestSegment"
 ```
 #### Manually
@@ -46,8 +46,7 @@ github "tbxark/PinterestSegment"
 
 ## Usage example
 
-```
-
+``` swift
 let  style = PinterestSegmentStyle()
 
 style.indicatorColor = UIColor(white: 0.95, alpha: 1)
