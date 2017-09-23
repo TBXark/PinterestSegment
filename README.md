@@ -3,8 +3,8 @@
 
 [![Swift Version][swift-image]][swift-url]
 [![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://raw.githubusercontent.com/TBXark/PinterestSegment/master/LICENSE)
-[![CocoaPods](http://img.shields.io/cocoapods/v/PinterestSegment.svg?style=flat)](http://cocoapods.org/?q= PinterestSegment)
-[![CocoaPods](http://img.shields.io/cocoapods/p/PinterestSegment.svg?style=flat)](http://cocoapods.org/?q= PinterestSegment)
+[![CocoaPods](http://img.shields.io/cocoapods/v/PinterestSegment.svg?style=flat)](http://cocoapods.org/?q=PinterestSegment)
+[![CocoaPods](http://img.shields.io/cocoapods/p/PinterestSegment.svg?style=flat)](http://cocoapods.org/?q=PinterestSegment)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Support](https://img.shields.io/badge/support-iOS%208%2B%20-blue.svg?style=flat)](https://www.apple.com/nl/ios/)
 
@@ -14,8 +14,8 @@
 ## Requirements
 
 - iOS 8.0+
-- Xcode 8.0
-- Swift 3.0
+- Xcode 9.0
+- Swift 4.0
 
 ## Installation
 
@@ -70,6 +70,9 @@ segment.valueChange = { index in
   Fix automaticallyAdjustsScrollViewInsets bug in PinterestSegment [http://tbxark.site/2016/12/08/2016-12-08-Swift-Pinterst/](http://tbxark.site/2016/12/08/2016-12-08-Swift-Pinterst/)
 
 ## Release History
+
+* 1.2.0
+  support swift 4.0
 
 * 1.0.1
   fix bug
