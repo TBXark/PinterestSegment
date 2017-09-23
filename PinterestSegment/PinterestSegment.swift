@@ -37,11 +37,11 @@ public class PinterestSegment: UIControl {
         }
     }
     public var valueChange: ((Int) -> Void)?
-    fileprivate var titleLabels: [UILabel] = []
-    public fileprivate(set) var selectIndex = 0
+    private var titleLabels: [UILabel] = []
+    public private(set) var selectIndex = 0
 
 
-    fileprivate  let scrollView: UIScrollView = {
+    private let scrollView: UIScrollView = {
         let view = UIScrollView()
         view.showsHorizontalScrollIndicator = false
         view.bounces = true
@@ -54,13 +54,13 @@ public class PinterestSegment: UIControl {
         return view
     }()
 
-    fileprivate let selectContent =  UIView()
-    fileprivate var indicator: UIView = {
+    private let selectContent =  UIView()
+    private var indicator: UIView = {
         let ind = UIView()
         ind.layer.masksToBounds = true
         return ind
     }()
-    fileprivate let selectedLabelsMaskView: UIView = {
+    private let selectedLabelsMaskView: UIView = {
         let cover = UIView()
         cover.layer.masksToBounds = true
         return cover
@@ -88,7 +88,7 @@ public class PinterestSegment: UIControl {
     }
 
 
-    @objc fileprivate func handleTapGesture(_ gesture: UITapGestureRecognizer) {
+    @objc private func handleTapGesture(_ gesture: UITapGestureRecognizer) {
         let x = gesture.location(in: self).x + scrollView.contentOffset.x
         for (i, label) in titleLabels.enumerated() {
             if x >= label.frame.minX && x <= label.frame.maxX {
@@ -98,11 +98,6 @@ public class PinterestSegment: UIControl {
         }
 
     }
-
-}
-
-//MARK: - public helper
-extension PinterestSegment {
 
     public func setSelectIndex(index: Int,animated: Bool = true) {
 
@@ -133,21 +128,14 @@ extension PinterestSegment {
         valueChange?(index)
         sendActions(for: UIControlEvents.valueChanged)
     }
-}
 
-
-
-//MARK: - fileprivate helper
-extension PinterestSegment {
-
-    func setIndicatorFrame(_ frame: CGRect) {
+    private func setIndicatorFrame(_ frame: CGRect) {
         indicator.frame = frame
         selectedLabelsMaskView.frame = frame
 
     }
 
-
-    fileprivate func reloadData() {
+    private func reloadData() {
 
         scrollView.subviews.forEach { $0.removeFromSuperview() }
         selectContent.subviews.forEach { $0.removeFromSuperview() }
@@ -167,7 +155,7 @@ extension PinterestSegment {
         selectedLabelsMaskView.isUserInteractionEnabled = true
 
         let toToSize: (String) -> CGFloat = { text in
-            return (text as NSString).boundingRect(with: CGSize(width: CGFloat(MAXFLOAT), height: 0.0), options: .usesLineFragmentOrigin, attributes: [NSFontAttributeName: font], context: nil).width
+            return (text as NSString).boundingRect(with: CGSize(width: CGFloat(MAXFLOAT), height: 0.0), options: .usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font: font], context: nil).width
         }
 
         for (index, title) in titles.enumerated() {
