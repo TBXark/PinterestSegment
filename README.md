@@ -1,12 +1,13 @@
 # PinterestSegment
 >  A Pinterest-like segment control with masking animation.
 
-[![Swift Version][swift-image]][swift-url]
-[![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://raw.githubusercontent.com/TBXark/PinterestSegment/master/LICENSE)
+![Xcode 9.0+](https://img.shields.io/badge/Xcode-9.0%2B-blue.svg)
+![iOS 8.0+](https://img.shields.io/badge/iOS-8.0%2B-blue.svg)
+![Swift 4.0+](https://img.shields.io/badge/Swift-4.0%2B-orange.svg)
+[![Build Status](https://travis-ci.org/TBXark/PinterestSegment.svg?branch=master)](https://travis-ci.org/TBXark/PinterestSegment)
 [![CocoaPods](http://img.shields.io/cocoapods/v/PinterestSegment.svg?style=flat)](http://cocoapods.org/?q=PinterestSegment)
-[![CocoaPods](http://img.shields.io/cocoapods/p/PinterestSegment.svg?style=flat)](http://cocoapods.org/?q=PinterestSegment)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![Support](https://img.shields.io/badge/support-iOS%208%2B%20-blue.svg?style=flat)](https://www.apple.com/nl/ios/)
+[![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://raw.githubusercontent.com/TBXark/PinterestSegment/master/LICENSE)
 
 
 ![](demo.gif)

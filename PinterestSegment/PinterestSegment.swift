@@ -11,25 +11,25 @@ import UIKit
 public struct PinterestSegmentStyle {
 
     public var indicatorColor = UIColor(white: 0.95, alpha: 1)
-    public var titleMargin: CGFloat = 15
+    public var titleMargin: CGFloat = 16
     public var titlePendingHorizontal: CGFloat = 14
     public var titlePendingVertical: CGFloat = 14
     public var titleFont = UIFont.boldSystemFont(ofSize: 14)
     public var normalTitleColor = UIColor.lightGray
     public var selectedTitleColor = UIColor.darkGray
     public init() {}
+    
 }
 
 
-
-public class PinterestSegment: UIControl {
+@IBDesignable public class PinterestSegment: UIControl {
 
     public var style: PinterestSegmentStyle {
         didSet {
             reloadData()
         }
     }
-    public var titles:[String] {
+    @IBInspectable public var titles:[String] {
         didSet {
             guard oldValue != titles else { return }
             reloadData()
@@ -77,14 +77,22 @@ public class PinterestSegment: UIControl {
         self.style = segmentStyle
         self.titles = titles
         super.init(frame: frame)
-        addSubview(UIView()) // fix automaticallyAdjustsScrollViewInsets bug
-        addSubview(scrollView)
-        reloadData()
+        shareInit()
     }
 
 
     required public init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        self.style = PinterestSegmentStyle()
+        self.titles = []
+        super.init(coder: aDecoder)
+        shareInit()
+    }
+    
+    
+    private func shareInit() {
+        addSubview(UIView()) // fix automaticallyAdjustsScrollViewInsets bug
+        addSubview(scrollView)
+        reloadData()
     }
 
 
@@ -134,13 +142,26 @@ public class PinterestSegment: UIControl {
         selectedLabelsMaskView.frame = frame
 
     }
-
-    private func reloadData() {
-
+    
+    private func clearData() {
         scrollView.subviews.forEach { $0.removeFromSuperview() }
         selectContent.subviews.forEach { $0.removeFromSuperview() }
+        if let gescs = gestureRecognizers {
+            for gesc in gescs {
+                removeGestureRecognizer(gesc)
+            }
+        }
         titleLabels.removeAll()
 
+
+    }
+
+    private func reloadData() {
+        clearData()
+        
+        guard titles.count > 0  else {
+            return
+        }
         // Set titles
         let font  = style.titleFont
         var titleX: CGFloat = 0.0
@@ -211,4 +232,73 @@ public class PinterestSegment: UIControl {
         setSelectIndex(index: 0)
         
     }
+}
+
+
+extension PinterestSegment {
+    
+    @IBInspectable public var titleFont: UIFont {
+        get {
+            return style.titleFont
+        }
+        set {
+            style.titleFont = newValue
+        }
+    }
+
+    @IBInspectable public var indicatorColor: UIColor {
+        get {
+            return style.indicatorColor
+        }
+        set {
+            style.indicatorColor = newValue
+        }
+    }
+    
+    @IBInspectable public var titleMargin: CGFloat {
+        get {
+            return style.titleMargin
+        }
+        set {
+            style.titleMargin = newValue
+        }
+    }
+    
+    @IBInspectable public var titlePendingHorizontal: CGFloat {
+        get {
+            return style.titlePendingHorizontal
+        }
+        set {
+            style.titlePendingHorizontal = newValue
+        }
+    }
+    
+    @IBInspectable public var titlePendingVertical: CGFloat  {
+        get {
+            return style.titlePendingVertical
+        }
+        set {
+            style.titlePendingVertical = newValue
+        }
+    }
+    
+    
+    @IBInspectable public var normalTitleColor: UIColor {
+        get {
+            return style.normalTitleColor
+        }
+        set {
+            style.normalTitleColor = newValue
+        }
+    }
+    
+    @IBInspectable public var selectedTitleColor: UIColor {
+        get {
+            return style.selectedTitleColor
+        }
+        set {
+            style.selectedTitleColor = newValue
+        }
+    }
+
 }

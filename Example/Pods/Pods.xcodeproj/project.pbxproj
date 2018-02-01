@@ -1,0 +1,724 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3BEAC8EB886415EAE3A15CED9AFC8FDC /* PinterestSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C111DFB3A0D234195E089302CBD5B637 /* PinterestSegment.swift */; };
+		41372B72AEDF91BE830D55C667FB9BE1 /* Pods-PinterestSegment_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F80F45B53EB8FDBB780022244DFDA2C /* Pods-PinterestSegment_Example-dummy.m */; };
+		43654FD5DD38D92E3D595E3682EAFAF0 /* PinterestSegment-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A1BFA3DA7F602224BDDDDDBF659AD27 /* PinterestSegment-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7074E27EC5DECB497C8E2C44D689971D /* Pods-PinterestSegment_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 743281A3F790FA3D4CF74D983DBAFFD2 /* Pods-PinterestSegment_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86DCD0474A84CC8161264B5348D80FF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		8FC11F0BF2548A8507B3CEB79F50AE1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		911903C4E2ACF251F5417E1C0464B34A /* Pods-PinterestSegment_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A99B839B387208CB6E77FC90C630346 /* Pods-PinterestSegment_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9149F5A07833F988B6EDEB5807EB2801 /* Pods-PinterestSegment_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AAF5F6F4B282CEDFC937792EB4FB5A /* Pods-PinterestSegment_Tests-dummy.m */; };
+		A9D6F8D25C89BC48382A831480BB7592 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		C311BBEAF75CC9FC365738C88EA32DC5 /* PinterestSegment-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B29123F9D5004CDE07B8AE723A1F95 /* PinterestSegment-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		20601B083EF0ABF690E6D555538E7EB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FECEE591A990DD0D724958FD9AFEF5C4;
+			remoteInfo = PinterestSegment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		001AF651114DBD94DAD96521F2F7A8AD /* Pods-PinterestSegment_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PinterestSegment_Tests.modulemap"; sourceTree = "<group>"; };
+		0475538ADDCFA276B31D3535CBD9640E /* Pods-PinterestSegment_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PinterestSegment_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		04C527F03F255C8983F6E5BE968E1955 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		18E1340AEE2288804690461ABC9522FB /* Pods_PinterestSegment_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PinterestSegment_Tests.framework; path = "Pods-PinterestSegment_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		195BE62C3B66FF12E01CF62B5E3BD6CD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		1A99B839B387208CB6E77FC90C630346 /* Pods-PinterestSegment_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PinterestSegment_Tests-umbrella.h"; sourceTree = "<group>"; };
+		20EF4C8955A6E4544472F2928CB3A3DB /* PinterestSegment.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = PinterestSegment.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		28BAEDE938CA243A4617BC71032ADC96 /* Pods-PinterestSegment_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PinterestSegment_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		2A7EA65BB0A98F6A8A550BEAE96554EA /* Pods-PinterestSegment_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PinterestSegment_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		2E3721ECCA6CB90D5BB502E1F3DE2555 /* Pods-PinterestSegment_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PinterestSegment_Example.release.xcconfig"; sourceTree = "<group>"; };
+		3C540352C645A61B445EEB7511E72D26 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48863A362E42E710C951E6DA4E2B209C /* Pods-PinterestSegment_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PinterestSegment_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5633E46699C843D6ECA3BFA8BD4312C1 /* Pods-PinterestSegment_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PinterestSegment_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		5A1BFA3DA7F602224BDDDDDBF659AD27 /* PinterestSegment-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PinterestSegment-umbrella.h"; sourceTree = "<group>"; };
+		5C7B81AA885FE97177B4E45451148F6E /* Pods-PinterestSegment_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PinterestSegment_Example-frameworks.sh"; sourceTree = "<group>"; };
+		5F80F45B53EB8FDBB780022244DFDA2C /* Pods-PinterestSegment_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PinterestSegment_Example-dummy.m"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6B38E88A07BF86ED6CDCCFBD9622FB72 /* Pods-PinterestSegment_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PinterestSegment_Example-resources.sh"; sourceTree = "<group>"; };
+		743281A3F790FA3D4CF74D983DBAFFD2 /* Pods-PinterestSegment_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PinterestSegment_Example-umbrella.h"; sourceTree = "<group>"; };
+		7FC0625D9E961E8B710B6FA431941778 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81CD979772DFB37C9B75228C0802E67B /* PinterestSegment-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PinterestSegment-prefix.pch"; sourceTree = "<group>"; };
+		83F5DB438213C7A6287345354234CD3A /* Pods-PinterestSegment_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PinterestSegment_Example.modulemap"; sourceTree = "<group>"; };
+		864BE55D8D495E9A4BC96857DB4EB2A1 /* Pods-PinterestSegment_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PinterestSegment_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		979ACD08436BEE5071A51CE54089BE9A /* Pods-PinterestSegment_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PinterestSegment_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A2AAF5F6F4B282CEDFC937792EB4FB5A /* Pods-PinterestSegment_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PinterestSegment_Tests-dummy.m"; sourceTree = "<group>"; };
+		AA68B956E743EAD87C8380A8EAF844ED /* PinterestSegment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PinterestSegment.framework; path = PinterestSegment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2B6235A2EE1E72EC4A74B54E990E726 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C111DFB3A0D234195E089302CBD5B637 /* PinterestSegment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PinterestSegment.swift; path = PinterestSegment/PinterestSegment.swift; sourceTree = "<group>"; };
+		C2E3519B564C79CC2F89FB0C87E5BA7E /* Pods_PinterestSegment_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PinterestSegment_Example.framework; path = "Pods-PinterestSegment_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9B29123F9D5004CDE07B8AE723A1F95 /* PinterestSegment-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PinterestSegment-dummy.m"; sourceTree = "<group>"; };
+		DBF9DE49275762E0BE0C3B98DC56B854 /* Pods-PinterestSegment_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PinterestSegment_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E3FE6EF99AD6887A3578AB4367545F7D /* Pods-PinterestSegment_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PinterestSegment_Tests-resources.sh"; sourceTree = "<group>"; };
+		E5D40B9EB18B83D51B61308B708EA1AF /* PinterestSegment.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PinterestSegment.xcconfig; sourceTree = "<group>"; };
+		F7D026F92EF3BDF6223CCCDBA199CA42 /* PinterestSegment.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PinterestSegment.modulemap; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A33B61DAB8FE653FAFA1ECF363E44D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86DCD0474A84CC8161264B5348D80FF5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26C43EE1597B99343B3FDB02DCECA484 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FC11F0BF2548A8507B3CEB79F50AE1C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D88152331EF70092DF8A029D21E27EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9D6F8D25C89BC48382A831480BB7592 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10B024E6A6D78893D04A0CE1B88BEFBA /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				557F1BF9784266A229C5BCDC2270E12D /* Pods-PinterestSegment_Example */,
+				E876B3CD6032F29A3DFED4FDEF67F284 /* Pods-PinterestSegment_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		557F1BF9784266A229C5BCDC2270E12D /* Pods-PinterestSegment_Example */ = {
+			isa = PBXGroup;
+			children = (
+				3C540352C645A61B445EEB7511E72D26 /* Info.plist */,
+				83F5DB438213C7A6287345354234CD3A /* Pods-PinterestSegment_Example.modulemap */,
+				48863A362E42E710C951E6DA4E2B209C /* Pods-PinterestSegment_Example-acknowledgements.markdown */,
+				28BAEDE938CA243A4617BC71032ADC96 /* Pods-PinterestSegment_Example-acknowledgements.plist */,
+				5F80F45B53EB8FDBB780022244DFDA2C /* Pods-PinterestSegment_Example-dummy.m */,
+				5C7B81AA885FE97177B4E45451148F6E /* Pods-PinterestSegment_Example-frameworks.sh */,
+				6B38E88A07BF86ED6CDCCFBD9622FB72 /* Pods-PinterestSegment_Example-resources.sh */,
+				743281A3F790FA3D4CF74D983DBAFFD2 /* Pods-PinterestSegment_Example-umbrella.h */,
+				979ACD08436BEE5071A51CE54089BE9A /* Pods-PinterestSegment_Example.debug.xcconfig */,
+				2E3721ECCA6CB90D5BB502E1F3DE2555 /* Pods-PinterestSegment_Example.release.xcconfig */,
+			);
+			name = "Pods-PinterestSegment_Example";
+			path = "Target Support Files/Pods-PinterestSegment_Example";
+			sourceTree = "<group>";
+		};
+		558775936B62C63C81F628DD9A998FB7 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6BF0E67A7E2735C200D96041ABF61F91 /* PinterestSegment */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		6BF0E67A7E2735C200D96041ABF61F91 /* PinterestSegment */ = {
+			isa = PBXGroup;
+			children = (
+				C111DFB3A0D234195E089302CBD5B637 /* PinterestSegment.swift */,
+				B4D038931CFDC25EDFF0E2C7CAAB06ED /* Pod */,
+				972D11C8FFEFAA74C3FBC0FB2F3B1349 /* Support Files */,
+			);
+			name = PinterestSegment;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				558775936B62C63C81F628DD9A998FB7 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				C59660709C58BDC1E6A5718B4D7A9D46 /* Products */,
+				10B024E6A6D78893D04A0CE1B88BEFBA /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		972D11C8FFEFAA74C3FBC0FB2F3B1349 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2B6235A2EE1E72EC4A74B54E990E726 /* Info.plist */,
+				F7D026F92EF3BDF6223CCCDBA199CA42 /* PinterestSegment.modulemap */,
+				E5D40B9EB18B83D51B61308B708EA1AF /* PinterestSegment.xcconfig */,
+				C9B29123F9D5004CDE07B8AE723A1F95 /* PinterestSegment-dummy.m */,
+				81CD979772DFB37C9B75228C0802E67B /* PinterestSegment-prefix.pch */,
+				5A1BFA3DA7F602224BDDDDDBF659AD27 /* PinterestSegment-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/PinterestSegment";
+			sourceTree = "<group>";
+		};
+		B4D038931CFDC25EDFF0E2C7CAAB06ED /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				04C527F03F255C8983F6E5BE968E1955 /* LICENSE */,
+				20EF4C8955A6E4544472F2928CB3A3DB /* PinterestSegment.podspec */,
+				195BE62C3B66FF12E01CF62B5E3BD6CD /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C59660709C58BDC1E6A5718B4D7A9D46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA68B956E743EAD87C8380A8EAF844ED /* PinterestSegment.framework */,
+				C2E3519B564C79CC2F89FB0C87E5BA7E /* Pods_PinterestSegment_Example.framework */,
+				18E1340AEE2288804690461ABC9522FB /* Pods_PinterestSegment_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E876B3CD6032F29A3DFED4FDEF67F284 /* Pods-PinterestSegment_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				7FC0625D9E961E8B710B6FA431941778 /* Info.plist */,
+				001AF651114DBD94DAD96521F2F7A8AD /* Pods-PinterestSegment_Tests.modulemap */,
+				DBF9DE49275762E0BE0C3B98DC56B854 /* Pods-PinterestSegment_Tests-acknowledgements.markdown */,
+				864BE55D8D495E9A4BC96857DB4EB2A1 /* Pods-PinterestSegment_Tests-acknowledgements.plist */,
+				A2AAF5F6F4B282CEDFC937792EB4FB5A /* Pods-PinterestSegment_Tests-dummy.m */,
+				5633E46699C843D6ECA3BFA8BD4312C1 /* Pods-PinterestSegment_Tests-frameworks.sh */,
+				E3FE6EF99AD6887A3578AB4367545F7D /* Pods-PinterestSegment_Tests-resources.sh */,
+				1A99B839B387208CB6E77FC90C630346 /* Pods-PinterestSegment_Tests-umbrella.h */,
+				2A7EA65BB0A98F6A8A550BEAE96554EA /* Pods-PinterestSegment_Tests.debug.xcconfig */,
+				0475538ADDCFA276B31D3535CBD9640E /* Pods-PinterestSegment_Tests.release.xcconfig */,
+			);
+			name = "Pods-PinterestSegment_Tests";
+			path = "Target Support Files/Pods-PinterestSegment_Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1E6B9932EE138EADAB9B9460E2B63921 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43654FD5DD38D92E3D595E3682EAFAF0 /* PinterestSegment-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		378AE24FC7C42780390FBE3109A7394C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				911903C4E2ACF251F5417E1C0464B34A /* Pods-PinterestSegment_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3790BD5400D4B18873CB0DA3ACC2FB38 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7074E27EC5DECB497C8E2C44D689971D /* Pods-PinterestSegment_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1823A38BEBA67B610197639B8B7B4CE6 /* Pods-PinterestSegment_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0395F0915C96263DA5F9B1FE85E6EFBD /* Build configuration list for PBXNativeTarget "Pods-PinterestSegment_Tests" */;
+			buildPhases = (
+				3BA0DD8C85C33BBF899F24B952AF30EA /* Sources */,
+				7D88152331EF70092DF8A029D21E27EF /* Frameworks */,
+				378AE24FC7C42780390FBE3109A7394C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-PinterestSegment_Tests";
+			productName = "Pods-PinterestSegment_Tests";
+			productReference = 18E1340AEE2288804690461ABC9522FB /* Pods_PinterestSegment_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		296797ADCA3948F889C095FA8128EA27 /* Pods-PinterestSegment_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C2CA1CE4AB0B5BFDE97A5035B2B6E4A /* Build configuration list for PBXNativeTarget "Pods-PinterestSegment_Example" */;
+			buildPhases = (
+				F97A7B16E962C3DE6A16A1BFB2E11F91 /* Sources */,
+				26C43EE1597B99343B3FDB02DCECA484 /* Frameworks */,
+				3790BD5400D4B18873CB0DA3ACC2FB38 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10C5F3F5A49BEC506ECDC233D10105C4 /* PBXTargetDependency */,
+			);
+			name = "Pods-PinterestSegment_Example";
+			productName = "Pods-PinterestSegment_Example";
+			productReference = C2E3519B564C79CC2F89FB0C87E5BA7E /* Pods_PinterestSegment_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FECEE591A990DD0D724958FD9AFEF5C4 /* PinterestSegment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2C39552B3BC494096C21E9088B10323 /* Build configuration list for PBXNativeTarget "PinterestSegment" */;
+			buildPhases = (
+				ECABDD273071A194A50DD1BB2D6E5DDE /* Sources */,
+				1A33B61DAB8FE653FAFA1ECF363E44D2 /* Frameworks */,
+				1E6B9932EE138EADAB9B9460E2B63921 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PinterestSegment;
+			productName = PinterestSegment;
+			productReference = AA68B956E743EAD87C8380A8EAF844ED /* PinterestSegment.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = C59660709C58BDC1E6A5718B4D7A9D46 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FECEE591A990DD0D724958FD9AFEF5C4 /* PinterestSegment */,
+				296797ADCA3948F889C095FA8128EA27 /* Pods-PinterestSegment_Example */,
+				1823A38BEBA67B610197639B8B7B4CE6 /* Pods-PinterestSegment_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BA0DD8C85C33BBF899F24B952AF30EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9149F5A07833F988B6EDEB5807EB2801 /* Pods-PinterestSegment_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECABDD273071A194A50DD1BB2D6E5DDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C311BBEAF75CC9FC365738C88EA32DC5 /* PinterestSegment-dummy.m in Sources */,
+				3BEAC8EB886415EAE3A15CED9AFC8FDC /* PinterestSegment.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F97A7B16E962C3DE6A16A1BFB2E11F91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41372B72AEDF91BE830D55C667FB9BE1 /* Pods-PinterestSegment_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		10C5F3F5A49BEC506ECDC233D10105C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PinterestSegment;
+			target = FECEE591A990DD0D724958FD9AFEF5C4 /* PinterestSegment */;
+			targetProxy = 20601B083EF0ABF690E6D555538E7EB5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		249F27C291632AD1A8FB9ACBCD2876A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E3721ECCA6CB90D5BB502E1F3DE2555 /* Pods-PinterestSegment_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PinterestSegment_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PinterestSegment_Example/Pods-PinterestSegment_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PinterestSegment_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		33510309D45308FB0D0003F0BBE8839B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 979ACD08436BEE5071A51CE54089BE9A /* Pods-PinterestSegment_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PinterestSegment_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PinterestSegment_Example/Pods-PinterestSegment_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PinterestSegment_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		33DA7F43A1D2FA3C74A8C8FC246E1FA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		3DCB90553F154D3FC2E4AEE42F62A0B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0475538ADDCFA276B31D3535CBD9640E /* Pods-PinterestSegment_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PinterestSegment_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PinterestSegment_Tests/Pods-PinterestSegment_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PinterestSegment_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		731DC216E1A58545B559F6E0A2418060 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		CA92E6D4411BAE84801811ED53C82A7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A7EA65BB0A98F6A8A550BEAE96554EA /* Pods-PinterestSegment_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PinterestSegment_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PinterestSegment_Tests/Pods-PinterestSegment_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PinterestSegment_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DAF1CB6010620770413C1CF1F7A5ED6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5D40B9EB18B83D51B61308B708EA1AF /* PinterestSegment.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PinterestSegment/PinterestSegment-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PinterestSegment/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PinterestSegment/PinterestSegment.modulemap";
+				PRODUCT_NAME = PinterestSegment;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E9A9BF86BABAC546A55835DF65F9CE49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5D40B9EB18B83D51B61308B708EA1AF /* PinterestSegment.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PinterestSegment/PinterestSegment-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PinterestSegment/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PinterestSegment/PinterestSegment.modulemap";
+				PRODUCT_NAME = PinterestSegment;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0395F0915C96263DA5F9B1FE85E6EFBD /* Build configuration list for PBXNativeTarget "Pods-PinterestSegment_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA92E6D4411BAE84801811ED53C82A7C /* Debug */,
+				3DCB90553F154D3FC2E4AEE42F62A0B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33DA7F43A1D2FA3C74A8C8FC246E1FA6 /* Debug */,
+				731DC216E1A58545B559F6E0A2418060 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C2CA1CE4AB0B5BFDE97A5035B2B6E4A /* Build configuration list for PBXNativeTarget "Pods-PinterestSegment_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33510309D45308FB0D0003F0BBE8839B /* Debug */,
+				249F27C291632AD1A8FB9ACBCD2876A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2C39552B3BC494096C21E9088B10323 /* Build configuration list for PBXNativeTarget "PinterestSegment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAF1CB6010620770413C1CF1F7A5ED6F /* Debug */,
+				E9A9BF86BABAC546A55835DF65F9CE49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

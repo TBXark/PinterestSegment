@@ -1,0 +1,6 @@
+framework module PinterestSegment {
+  umbrella header "PinterestSegment-umbrella.h"
+
+  export *
+  module * { export * }
+}
