@@ -10,7 +10,7 @@
 [![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://raw.githubusercontent.com/TBXark/PinterestSegment/master/LICENSE)
 
 
-![](demo.gif)
+![](Example/demo.gif)
 
 ## Requirements
 
