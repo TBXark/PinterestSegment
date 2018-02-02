@@ -237,7 +237,7 @@ public struct PinterestSegmentStyle {
 
 extension PinterestSegment {
     
-    @IBInspectable public var titleFont: UIFont {
+    public var titleFont: UIFont {
         get {
             return style.titleFont
         }
