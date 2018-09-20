@@ -30,13 +30,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		001AF651114DBD94DAD96521F2F7A8AD /* Pods-PinterestSegment_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PinterestSegment_Tests.modulemap"; sourceTree = "<group>"; };
+		001AF651114DBD94DAD96521F2F7A8AD /* Pods-PinterestSegment_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PinterestSegment_Tests.modulemap"; sourceTree = "<group>"; };
 		0475538ADDCFA276B31D3535CBD9640E /* Pods-PinterestSegment_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PinterestSegment_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		04C527F03F255C8983F6E5BE968E1955 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		18E1340AEE2288804690461ABC9522FB /* Pods_PinterestSegment_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PinterestSegment_Tests.framework; path = "Pods-PinterestSegment_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		195BE62C3B66FF12E01CF62B5E3BD6CD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		04C527F03F255C8983F6E5BE968E1955 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		18E1340AEE2288804690461ABC9522FB /* Pods_PinterestSegment_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PinterestSegment_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		195BE62C3B66FF12E01CF62B5E3BD6CD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1A99B839B387208CB6E77FC90C630346 /* Pods-PinterestSegment_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PinterestSegment_Tests-umbrella.h"; sourceTree = "<group>"; };
-		20EF4C8955A6E4544472F2928CB3A3DB /* PinterestSegment.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = PinterestSegment.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		20EF4C8955A6E4544472F2928CB3A3DB /* PinterestSegment.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = PinterestSegment.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		28BAEDE938CA243A4617BC71032ADC96 /* Pods-PinterestSegment_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PinterestSegment_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		2A7EA65BB0A98F6A8A550BEAE96554EA /* Pods-PinterestSegment_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PinterestSegment_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		2E3721ECCA6CB90D5BB502E1F3DE2555 /* Pods-PinterestSegment_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PinterestSegment_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -51,20 +51,20 @@
 		743281A3F790FA3D4CF74D983DBAFFD2 /* Pods-PinterestSegment_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PinterestSegment_Example-umbrella.h"; sourceTree = "<group>"; };
 		7FC0625D9E961E8B710B6FA431941778 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81CD979772DFB37C9B75228C0802E67B /* PinterestSegment-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PinterestSegment-prefix.pch"; sourceTree = "<group>"; };
-		83F5DB438213C7A6287345354234CD3A /* Pods-PinterestSegment_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PinterestSegment_Example.modulemap"; sourceTree = "<group>"; };
+		83F5DB438213C7A6287345354234CD3A /* Pods-PinterestSegment_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PinterestSegment_Example.modulemap"; sourceTree = "<group>"; };
 		864BE55D8D495E9A4BC96857DB4EB2A1 /* Pods-PinterestSegment_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PinterestSegment_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		979ACD08436BEE5071A51CE54089BE9A /* Pods-PinterestSegment_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PinterestSegment_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A2AAF5F6F4B282CEDFC937792EB4FB5A /* Pods-PinterestSegment_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PinterestSegment_Tests-dummy.m"; sourceTree = "<group>"; };
-		AA68B956E743EAD87C8380A8EAF844ED /* PinterestSegment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PinterestSegment.framework; path = PinterestSegment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA68B956E743EAD87C8380A8EAF844ED /* PinterestSegment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PinterestSegment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2B6235A2EE1E72EC4A74B54E990E726 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C111DFB3A0D234195E089302CBD5B637 /* PinterestSegment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PinterestSegment.swift; path = PinterestSegment/PinterestSegment.swift; sourceTree = "<group>"; };
-		C2E3519B564C79CC2F89FB0C87E5BA7E /* Pods_PinterestSegment_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PinterestSegment_Example.framework; path = "Pods-PinterestSegment_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2E3519B564C79CC2F89FB0C87E5BA7E /* Pods_PinterestSegment_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PinterestSegment_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9B29123F9D5004CDE07B8AE723A1F95 /* PinterestSegment-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PinterestSegment-dummy.m"; sourceTree = "<group>"; };
 		DBF9DE49275762E0BE0C3B98DC56B854 /* Pods-PinterestSegment_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PinterestSegment_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E3FE6EF99AD6887A3578AB4367545F7D /* Pods-PinterestSegment_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PinterestSegment_Tests-resources.sh"; sourceTree = "<group>"; };
 		E5D40B9EB18B83D51B61308B708EA1AF /* PinterestSegment.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PinterestSegment.xcconfig; sourceTree = "<group>"; };
-		F7D026F92EF3BDF6223CCCDBA199CA42 /* PinterestSegment.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PinterestSegment.modulemap; sourceTree = "<group>"; };
+		F7D026F92EF3BDF6223CCCDBA199CA42 /* PinterestSegment.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PinterestSegment.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -492,6 +492,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
@@ -580,6 +581,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
@@ -640,7 +642,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -671,7 +673,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
