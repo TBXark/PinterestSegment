@@ -2,10 +2,4 @@ use_frameworks!
 
 target 'PinterestSegment_Example' do
   pod 'PinterestSegment', :path => '../'
-
-  target 'PinterestSegment_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end

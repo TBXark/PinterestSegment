@@ -1,6 +1,6 @@
 {
   "name": "PinterestSegment",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "summary": "PinterestSegment is a animation segment",
   "license": {
     "type": "MIT License",
@@ -15,7 +15,7 @@
   },
   "source": {
     "git": "https://github.com/TBXark/PinterestSegment.git",
-    "tag": "1.2.0"
+    "tag": "1.2.1"
   },
   "source_files": "PinterestSegment/PinterestSegment.swift",
   "requires_arc": true

@@ -1,16 +1,16 @@
 PODS:
-  - PinterestSegment (1.2.0)
+  - PinterestSegment (1.2.1)
 
 DEPENDENCIES:
   - PinterestSegment (from `../`)
 
 EXTERNAL SOURCES:
   PinterestSegment:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  PinterestSegment: bcf740d96a0180578f5cdfeaeb51e4c0110ac856
+  PinterestSegment: dc652f74d741096ec5fb3e66ee6ef688409c3b77
 
-PODFILE CHECKSUM: 2417bb91a516e3ac74e3e4430869552cc78eccb3
+PODFILE CHECKSUM: 3b55671c8579b23220e11e7767c9ac3c7b96c837
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.6.0.beta.1

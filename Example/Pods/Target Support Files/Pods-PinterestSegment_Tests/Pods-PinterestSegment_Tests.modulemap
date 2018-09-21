@@ -1,6 +1,0 @@
-framework module Pods_PinterestSegment_Tests {
-  umbrella header "Pods-PinterestSegment_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}

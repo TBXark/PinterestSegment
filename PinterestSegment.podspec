@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "PinterestSegment"
-  s.version      = "1.2.1"
+  s.version      = "1.2.2"
   s.summary      = "PinterestSegment is a animation segment"
   s.license      = { :type => 'MIT License', :file => 'LICENSE' } 
   s.homepage     = "https://github.com/TBXark/PinterestSegment"
