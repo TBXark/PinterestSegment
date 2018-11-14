@@ -36,6 +36,7 @@ public struct PinterestSegmentStyle {
         }
     }
     public var valueChange: ((Int) -> Void)?
+    public var valueSelection: ((Int) -> Void)?
     private var titleLabels: [UILabel] = []
     public private(set) var selectIndex = 0
     
@@ -102,8 +103,12 @@ public struct PinterestSegmentStyle {
     }
     
     public func setSelectIndex(index: Int,animated: Bool = true) {
-        
-        guard index != selectIndex, index >= 0 , index < titleLabels.count else { return }
+
+        guard index >= 0 , index < titleLabels.count else { return }
+        guard index != selectIndex else {
+            valueSelection?(index)
+            return
+        }
         
         let currentLabel = titleLabels[index]
         let offSetX = min(max(0, currentLabel.center.x - bounds.width / 2),
@@ -129,6 +134,7 @@ public struct PinterestSegmentStyle {
         selectIndex = index
         valueChange?(index)
         sendActions(for: .valueChanged)
+        valueSelection?(index)
     }
     
     private func setIndicatorFrame(_ frame: CGRect) {
