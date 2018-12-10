@@ -12,15 +12,15 @@ import PinterestSegment
 class ViewController: UIViewController {
 
     @IBOutlet weak var ibSegment: PinterestSegment!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         let w = view.frame.width
-        let s = PinterestSegment(frame: CGRect(x: 20, y: 200, width: w - 40, height: 40), titles: ["Everything", "Geek", "Humor", "Art", "Food", "Home", "DIY", "Wemoent' Style", "Man's Style", "Beauty", "Travel"])
+        let s = PinterestSegment(frame: CGRect(x: 20, y: 40, width: w - 40, height: 40), titles: ["Everything", "Geek", "Humor", "Art", "Food", "Home", "DIY", "Wemoent' Style", "Man's Style", "Beauty", "Travel"])
         s.style.titleFont = UIFont.systemFont(ofSize: 14, weight: UIFont.Weight(rawValue: 5))
         view.addSubview(s)
-        
-        ibSegment.titles = ["Everything", "Geek", "Humor", "Art", "Food", "Home", "DIY", "Wemoent' Style", "Man's Style", "Beauty", "Travel"]
+
+        ibSegment.titles = ["Storybord", "Everything", "Geek", "Humor", "Art", "Food", "Home", "DIY", "Wemoent' Style", "Man's Style", "Beauty", "Travel"]
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,5 +29,3 @@ class ViewController: UIViewController {
     }
 
 }
-
-
