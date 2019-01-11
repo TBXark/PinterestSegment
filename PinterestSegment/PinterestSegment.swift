@@ -22,7 +22,13 @@ public struct PinterestSegmentStyle {
 }
 
 @IBDesignable public class PinterestSegment: UIControl {
-
+    enum PinterestSegmentAction:Int {
+        case none
+        case reload
+        case updateTitles
+        case selectItem
+    }
+    
     public var style: PinterestSegmentStyle {
         didSet {
             reloadLayout()
@@ -46,11 +52,14 @@ public struct PinterestSegmentStyle {
         didSet {
             guard oldValue != titles else { return }
             reloadData()
-            setSelectIndex(index: 0, animated: true)
+            if autoScrollToFirstWhenReload == true {
+                setSelectIndex(index: 0, animated: true,sendAction: .updateTitles)
+            }
         }
     }
 
     public var valueChange: ((Int) -> Void)?
+    public var valueSelected: ((Int) -> Void)?
     private var titleLabels: [UILabel] = []
     public private(set) var selectIndex = 0
 
@@ -78,6 +87,8 @@ public struct PinterestSegmentStyle {
         cover.layer.masksToBounds = true
         return cover
     }()
+    
+    public var autoScrollToFirstWhenReload = true
 
     // MARK: - life cycle
     public convenience override init(frame: CGRect) {
@@ -109,7 +120,7 @@ public struct PinterestSegmentStyle {
     }
 
     public func setSelectIndex(index: Int, animated: Bool = true) {
-        setSelectIndex(index: index, animated: animated, sendAction: true)
+        setSelectIndex(index: index, animated: animated, sendAction: .reload)
     }
 
     // Target action
@@ -117,14 +128,14 @@ public struct PinterestSegmentStyle {
         let x = gesture.location(in: self).x + scrollView.contentOffset.x
         for (i, label) in titleLabels.enumerated() {
             if x >= label.frame.minX && x <= label.frame.maxX {
-                setSelectIndex(index: i, animated: true)
+                setSelectIndex(index: i, animated: true, sendAction: .selectItem)
                 break
             }
         }
 
     }
 
-    private func setSelectIndex(index: Int, animated: Bool, sendAction: Bool) {
+    private func setSelectIndex(index: Int, animated: Bool, sendAction: PinterestSegmentAction) {
 
         guard index != selectIndex, index >= 0, index < titleLabels.count else { return }
 
@@ -150,9 +161,18 @@ public struct PinterestSegmentStyle {
         }
 
         selectIndex = index
-        if sendAction {
+        switch sendAction {
+        case .updateTitles,.reload:
             valueChange?(index)
             sendActions(for: .valueChanged)
+        case .selectItem:
+            valueSelected?(index)
+            sendActions(for: .valueChanged)
+        default:
+            break
+        }
+        if sendAction == .updateTitles {
+           
         }
     }
 
@@ -167,7 +187,7 @@ public struct PinterestSegmentStyle {
     private func reloadLayout() {
         let _selectIndex = selectIndex
         reloadData()
-        setSelectIndex(index: _selectIndex, animated: false, sendAction: false)
+        setSelectIndex(index: _selectIndex, animated: false, sendAction: .none)
     }
     
     private func clearData() {
@@ -253,7 +273,9 @@ public struct PinterestSegmentStyle {
 
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(PinterestSegment.handleTapGesture(_:)))
         addGestureRecognizer(tapGesture)
-        setSelectIndex(index: 0)
+        if autoScrollToFirstWhenReload == true {
+            setSelectIndex(index: 0, animated: true, sendAction: .reload)
+        }
 
     }
 }
