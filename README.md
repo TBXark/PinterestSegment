@@ -86,7 +86,7 @@ You can also add icon for each title, Just like the blow demo git
 
 ## Article
   
-  Fix automaticallyAdjustsScrollViewInsets bug in PinterestSegment [http://tbxark.site/2016/12/08/2016-12-08-Swift-Pinterst/](http://tbxark.site/2016/12/08/2016-12-08-Swift-Pinterst/)
+  Fix automaticallyAdjustsScrollViewInsets bug in PinterestSegment [https://tbxark.com/2016/12/08/2016-12-08-Swift-Pinterst/](https://tbxark.com/2016/12/08/2016-12-08-Swift-Pinterst/)
 
 ## Release History
 
