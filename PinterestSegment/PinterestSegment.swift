@@ -348,7 +348,7 @@ extension PinterestSegment {
     
     @IBInspectable public var minimumWidth: CGFloat {
         get {
-            return style.minimumWidth
+            return style.minimumWidth ?? 0
         }
         set {
             style.minimumWidth = newValue
