@@ -20,7 +20,6 @@ public struct PinterestSegmentStyle {
     public var selectedBorderColor = UIColor.clear
     public var normalBorderColor = UIColor.clear
     public var minimumWidth: CGFloat?
-    public var titlePadding: CGFloat?
     public init() {}
     
 }
