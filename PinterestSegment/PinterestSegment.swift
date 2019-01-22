@@ -17,8 +17,16 @@ public struct PinterestSegmentStyle {
     public var titleFont = UIFont.boldSystemFont(ofSize: 14)
     public var normalTitleColor = UIColor.lightGray
     public var selectedTitleColor = UIColor.darkGray
+    public var selectedBorderColor = UIColor.clear
+    public var minimumWidth: CGFloat?
+    public var titlePadding: CGFloat?
     public init() {}
 
+}
+
+protocol PinterestSegmentCustomizeDelegate
+{
+    func customizeSegment()
 }
 
 @IBDesignable public class PinterestSegment: UIControl {
@@ -48,6 +56,16 @@ public struct PinterestSegmentStyle {
             reloadData()
             setSelectIndex(index: 0, animated: true)
         }
+    }
+    
+    private var selectedImages : [UIImage]?
+    private var normalImages : [UIImage]?
+    public func setTitles(_ titles : [String], selectedImages : [UIImage], normalImages: [UIImage])
+    {
+        self.titlePendingHorizontal = self.titlePendingVertical + (selectedImages.first?.size.width ?? 0)
+        self.selectedImages = selectedImages
+        self.normalImages = normalImages
+        self.titles = titles
     }
 
     public var valueChange: ((Int) -> Void)?
@@ -190,8 +208,11 @@ public struct PinterestSegmentStyle {
         // Set titles
         let font  = style.titleFont
         var titleX: CGFloat = 0.0
-        let titleH = font.lineHeight
-        let titleY: CGFloat = ( bounds.height - font.lineHeight)/2
+        var titleH = font.lineHeight + 10
+        if let _ = normalImages{
+            titleH = titleH + style.titlePendingVertical
+        }
+        let titleY: CGFloat = ( bounds.height - titleH)/2
         let coverH: CGFloat = font.lineHeight + style.titlePendingVertical
 
         selectedLabelsMaskView.backgroundColor = UIColor.black
@@ -201,12 +222,19 @@ public struct PinterestSegmentStyle {
         selectedLabelsMaskView.isUserInteractionEnabled = true
 
         let toToSize: (String) -> CGFloat = { text in
-            return (text as NSString).boundingRect(with: CGSize(width: CGFloat.greatestFiniteMagnitude, height: 0.0), options: .usesLineFragmentOrigin, attributes: [.font: font], context: nil).width
+            let result =  (text as NSString).boundingRect(with: CGSize(width: CGFloat.greatestFiniteMagnitude, height: 0.0), options: .usesLineFragmentOrigin, attributes: [.font: font], context: nil).width
+
+            if let minWidth = self.style.minimumWidth, result < minWidth
+            {
+                return minWidth
+            }
+            return result
         }
 
         for (index, title) in titles.enumerated() {
 
             let titleW = toToSize(title) + style.titlePendingHorizontal * 2
+            
             titleX = (titleLabels.last?.frame.maxX ?? 0 ) + style.titleMargin
             let rect = CGRect(x: titleX, y: titleY, width: titleW, height: titleH)
 
@@ -217,6 +245,12 @@ public struct PinterestSegmentStyle {
             backLabel.font = style.titleFont
             backLabel.textAlignment = .center
             backLabel.frame = rect
+            
+            if let normalImages = normalImages, normalImages.count > index
+            {
+                let normalImage = normalImages[index]
+                backLabel.addToLeft(image: normalImage)
+            }
 
             let frontLabel = UILabel(frame: CGRect.zero)
             frontLabel.tag = index
@@ -225,6 +259,11 @@ public struct PinterestSegmentStyle {
             frontLabel.font = style.titleFont
             frontLabel.textAlignment = .center
             frontLabel.frame = rect
+            if let selectedImages = selectedImages, selectedImages.count > index
+            {
+                let selectedImage = selectedImages[index]
+                frontLabel.addToLeft(image: selectedImage)
+            }
 
             titleLabels.append(backLabel)
             scrollView.addSubview(backLabel)
@@ -237,6 +276,8 @@ public struct PinterestSegmentStyle {
         }
 
         // Set Cover
+        indicator.layer.borderWidth = 2
+        indicator.layer.borderColor = style.selectedBorderColor.cgColor
         indicator.backgroundColor = style.indicatorColor
         scrollView.addSubview(indicator)
         scrollView.addSubview(selectContent)
@@ -304,6 +345,15 @@ extension PinterestSegment {
             style.titlePendingVertical = newValue
         }
     }
+    
+    @IBInspectable public var minimumWidth: CGFloat {
+        get {
+            return style.minimumWidth
+        }
+        set {
+            style.minimumWidth = newValue
+        }
+    }
 
     @IBInspectable public var normalTitleColor: UIColor {
         get {
@@ -322,5 +372,37 @@ extension PinterestSegment {
             style.selectedTitleColor = newValue
         }
     }
+    
+    @IBInspectable public var selectedBorderColor: UIColor {
+        get {
+            return style.selectedBorderColor
+        }
+        set {
+            style.selectedBorderColor = newValue
+        }
+    }
 
+}
+
+extension UILabel
+{
+    @objc public func addToLeft(image: UIImage?)
+    {
+        if let image = image{
+            let attachment = NSTextAttachment()
+            attachment.image = image
+            let attachString = NSAttributedString.init(attachment: attachment)
+            let result = NSMutableAttributedString()
+            result.append(attachString)
+            if let text = text
+            {
+                let titleString = NSMutableAttributedString(string: text)
+                let range = NSMakeRange(0,text.count)
+                titleString.addAttribute(NSAttributedString.Key.baselineOffset, value: image.size.height / 4, range: range)
+                result.append(titleString)
+                self.text = nil
+            }
+            self.attributedText = result
+        }
+    }
 }
