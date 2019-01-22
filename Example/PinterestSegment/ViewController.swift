@@ -21,7 +21,6 @@ class ViewController: UIViewController {
         view.addSubview(s)
 
         var titles = [PinterestSegment.TitleElement]()
-
         for i in 1...7 {
             guard let image = UIImage(named: "icon_\(i)"),
             let selectedImage = image.maskWithColor(color: ibSegment.style.selectedTitleColor),
