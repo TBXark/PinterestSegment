@@ -67,19 +67,22 @@ segment.valueChange = { index in
 ```
 
 
-You can also add icon for each title, Just like the blow demo git
+You can also add icon for each title, Just like the blow demo gif
 
 ![](Example/demo2.gif)
 
 ```swift
-        var titles = [PinterestSegment.TitleElement]()
-        for i in 1...7 {
-            guard let image = UIImage(named: "icon_\(i)"),
-            let selectedImage = image.maskWithColor(color: ibSegment.style.selectedTitleColor),
-            let normalImage = image.maskWithColor(color: ibSegment.style.normalTitleColor)  else { continue }
-            titles.append(PinterestSegment.TitleElement(title: "Face-\(i)", selectedImage: selectedImage, normalImage: normalImage))
-        }
-        ibSegment.setRichTextTitles(titles)
+
+@IBOutlet weak var ibSegment: PinterestSegment!
+
+var titles = [PinterestSegment.TitleElement]()
+for i in 1...7 {
+    guard let image = UIImage(named: "icon_\(i)"),
+    let selectedImage = image.maskWithColor(color: ibSegment.style.selectedTitleColor),
+    let normalImage = image.maskWithColor(color: ibSegment.style.normalTitleColor)  else { continue }
+    titles.append(PinterestSegment.TitleElement(title: "Face-\(i)", selectedImage: selectedImage, normalImage: normalImage))
+}
+ibSegment.setRichTextTitles(titles)
 
 ```
 
