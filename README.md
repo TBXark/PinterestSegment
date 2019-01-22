@@ -67,7 +67,7 @@ segment.valueChange = { index in
 ```
 
 
-You can also add icon for each title, Just like the blow demo git
+You can also add icon for each title, Just like the blow demo gif
 
 ![](Example/demo2.gif)
 
