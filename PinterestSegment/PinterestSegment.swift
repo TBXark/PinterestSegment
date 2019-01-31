@@ -438,8 +438,6 @@ extension UILabel {
             }
             
             attachment.bounds = CGRect(x: 0, y: (self.font.capHeight - size.height) / 2, width: image.size.width, height: image.size.height)
-            //baseline = size.height/4
-            //attachment.bounds = CGRect(x: 0, y: 0, width: size.width, height: size.height)
             let attachmentStr = NSAttributedString(attachment: attachment)
             mutableAttributedString.append(attachmentStr)
         }
