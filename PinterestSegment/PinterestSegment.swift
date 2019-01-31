@@ -428,7 +428,6 @@ extension PinterestSegment {
 extension UILabel {
     @objc public func addToLeft(image: UIImage?) {
         let mutableAttributedString = NSMutableAttributedString()
-        var baseline: CGFloat = 0
         if let image = image {
             let attachment = NSTextAttachment()
             attachment.image = image
@@ -437,13 +436,15 @@ extension UILabel {
                 size.height = bounds.height
                 size.width = size.height * bounds.width / bounds.height
             }
-            baseline = size.height/4
-            attachment.bounds = CGRect(x: 0, y: 0, width: size.width, height: size.height)
+            
+            attachment.bounds = CGRect(x: 0, y: (self.font.capHeight - size.height) / 2, width: image.size.width, height: image.size.height)
+            //baseline = size.height/4
+            //attachment.bounds = CGRect(x: 0, y: 0, width: size.width, height: size.height)
             let attachmentStr = NSAttributedString(attachment: attachment)
             mutableAttributedString.append(attachmentStr)
         }
         if let text = self.text {
-            let textString = NSAttributedString(string: text, attributes: [.font: self.font, .foregroundColor: self.textColor, .baselineOffset: baseline])
+            let textString = NSAttributedString(string: text, attributes: [.font: self.font, .foregroundColor: self.textColor])
             mutableAttributedString.append(textString)
         }
         self.attributedText = mutableAttributedString
