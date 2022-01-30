@@ -15,6 +15,7 @@ public struct PinterestSegmentStyle {
     public var titlePendingHorizontal: CGFloat = 14
     public var titlePendingVertical: CGFloat = 14
     public var titleFont = UIFont.boldSystemFont(ofSize: 14)
+    public var selectedTitleFont = UIFont.boldSystemFont(ofSize: 14)
     public var normalTitleColor = UIColor.lightGray
     public var selectedTitleColor = UIColor.darkGray
     public var selectedBorderColor = UIColor.clear
@@ -286,7 +287,7 @@ public struct PinterestSegmentStyle {
             frontLabel.tag = index
             frontLabel.text = item.title
             frontLabel.textColor = style.selectedTitleColor
-            frontLabel.font = style.titleFont
+            frontLabel.font = style.selectedTitleFont
             frontLabel.textAlignment = .center
             frontLabel.frame = rect
             if let selectedImage = item.selectedImage {
@@ -336,6 +337,15 @@ extension PinterestSegment {
         }
         set {
             style.titleFont = newValue
+        }
+    }
+
+    public var selectedTitleFont: UIFont {
+        get {
+            return style.selectedTitleFont
+        }
+        set {
+            style.selectedTitleFont = newValue
         }
     }
 
