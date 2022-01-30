@@ -11,6 +11,7 @@ import UIKit
 public struct PinterestSegmentStyle {
 
     public var indicatorColor = UIColor(white: 0.95, alpha: 1)
+    public var contentHorizontalInset: CGFloat = 16
     public var titleMargin: CGFloat = 16
     public var titlePendingHorizontal: CGFloat = 14
     public var titlePendingVertical: CGFloat = 14
@@ -261,7 +262,8 @@ public struct PinterestSegmentStyle {
 
             let titleW = toToSize(item.title) + titlePendingHorizontal * 2
 
-            titleX = (titleLabels.last?.frame.maxX ?? 0 ) + style.titleMargin
+            let xOffset = index == 0 ? style.contentHorizontalInset : style.titleMargin
+            titleX = (titleLabels.last?.frame.maxX ?? 0 ) + xOffset
             let rect = CGRect(x: titleX, y: titleY, width: titleW, height: titleH)
 
             let backLabel = UILabel(frame: CGRect.zero)
@@ -298,8 +300,8 @@ public struct PinterestSegmentStyle {
             selectContent.addSubview(frontLabel)
 
             if index == titles.count - 1 {
-                scrollView.contentSize.width = rect.maxX + style.titleMargin
-                selectContent.frame.size.width = rect.maxX + style.titleMargin
+                scrollView.contentSize.width = rect.maxX + style.contentHorizontalInset
+                selectContent.frame.size.width = rect.maxX + style.contentHorizontalInset
             }
         }
 
