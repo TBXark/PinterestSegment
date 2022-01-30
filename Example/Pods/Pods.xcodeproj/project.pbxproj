@@ -10,6 +10,7 @@
 		063AD5DA0C25B0AF16B0E21B3CD955F4 /* PinterestSegment-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF729ECB606D6BDB2B3F5DC07114785D /* PinterestSegment-dummy.m */; };
 		17F2545D2017D07C206CB07E53485F6E /* PinterestSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C111DFB3A0D234195E089302CBD5B637 /* PinterestSegment.swift */; };
 		3384D28B7E0B9494AFA169A4BB543939 /* PinterestSegment-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 70323C329757501B884F0825B423231A /* PinterestSegment-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		443D924E27A6FC3500789E01 /* UIView+PinterestSegmentStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443D924D27A6FC3500789E01 /* UIView+PinterestSegmentStyle.swift */; };
 		4D5CF6A81F86D02AFFCBEA086305833F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		7D3C3007AA9E2217DD3CD092B9ED88D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		86CA1852E566AB814EEE103143A7FB4D /* Pods-PinterestSegment_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0878928F6393A2476FE68468A02F32 /* Pods-PinterestSegment_Example-dummy.m */; };
@@ -32,6 +33,7 @@
 		195BE62C3B66FF12E01CF62B5E3BD6CD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		20EF4C8955A6E4544472F2928CB3A3DB /* PinterestSegment.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = PinterestSegment.podspec; sourceTree = "<group>"; };
 		3A35AC4BED155B8D5CB0257664170D1E /* PinterestSegment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PinterestSegment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		443D924D27A6FC3500789E01 /* UIView+PinterestSegmentStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+PinterestSegmentStyle.swift"; sourceTree = "<group>"; };
 		469C72798D9A18F3EA7E9E65254C4D8D /* PinterestSegment.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PinterestSegment.xcconfig; sourceTree = "<group>"; };
 		5818CB693912F9BD9E37337977E748AF /* Pods-PinterestSegment_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PinterestSegment_Example.release.xcconfig"; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -86,6 +88,14 @@
 			path = "Example/Pods/Target Support Files/PinterestSegment";
 			sourceTree = "<group>";
 		};
+		443D924C27A6FC2600789E01 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				443D924D27A6FC3500789E01 /* UIView+PinterestSegmentStyle.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		558775936B62C63C81F628DD9A998FB7 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				C111DFB3A0D234195E089302CBD5B637 /* PinterestSegment.swift */,
+				443D924C27A6FC2600789E01 /* Extension */,
 				B4D038931CFDC25EDFF0E2C7CAAB06ED /* Pod */,
 				13F422B391AD630E08C8BD6046303C78 /* Support Files */,
 			);
@@ -254,6 +265,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
@@ -289,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				443D924E27A6FC3500789E01 /* UIView+PinterestSegmentStyle.swift in Sources */,
 				063AD5DA0C25B0AF16B0E21B3CD955F4 /* PinterestSegment-dummy.m in Sources */,
 				17F2545D2017D07C206CB07E53485F6E /* PinterestSegment.swift in Sources */,
 			);
