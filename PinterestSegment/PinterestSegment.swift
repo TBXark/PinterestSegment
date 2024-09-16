@@ -9,7 +9,11 @@
 import UIKit
 
 public struct PinterestSegmentStyle {
-
+    public enum Radius {
+        case rounded
+        case roundedText
+        case exact(CGFloat)
+    }
     public var indicatorColor = UIColor(white: 0.95, alpha: 1)
     public var titleMargin: CGFloat = 16
     public var titlePendingHorizontal: CGFloat = 14
@@ -20,6 +24,7 @@ public struct PinterestSegmentStyle {
     public var selectedBorderColor = UIColor.clear
     public var normalBorderColor = UIColor.clear
     public var minimumWidth: CGFloat?
+    public var radius: Radius = .roundedText
     public init() {}
 
 }
@@ -275,7 +280,7 @@ public struct PinterestSegmentStyle {
             if style.normalBorderColor != .clear {
                 backLabel.layer.borderColor = UIColor.darkGray.cgColor
                 backLabel.layer.borderWidth = 2
-                backLabel.layer.cornerRadius = backLabel.frame.size.height / 2
+                backLabel.setRadius(from: style)
             }
 
             if let normalImage = item.normalImage {
@@ -317,8 +322,8 @@ public struct PinterestSegmentStyle {
         let indRect = CGRect(x: coverX, y: coverY, width: coverW, height: coverH)
         setIndicatorFrame(indRect)
 
-        indicator.layer.cornerRadius = coverH/2
-        selectedLabelsMaskView.layer.cornerRadius = coverH/2
+        indicator.setRadius(from: style)
+        selectedLabelsMaskView.setRadius(from: style)
 
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(PinterestSegment.handleTapGesture(_:)))
         addGestureRecognizer(tapGesture)
