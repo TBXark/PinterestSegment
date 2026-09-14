@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "tabWidth": 4,
+  "indentation": {
+    "spaces": 4
+  },
+  "lineLength": 120,
+  "maximumBlankLines": 2,
+  "respectsExistingLineBreaks": true,
+  "prioritizeKeepingFunctionOutputTogether": true,
+  "multiElementCollectionTrailingCommas": true
+}

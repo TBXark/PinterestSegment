@@ -1,0 +1,27 @@
+name: PinterestSegmentDemo
+options:
+  bundleIdPrefix: com.tbxark
+  deploymentTarget:
+    iOS: "15.0"
+  createIntermediateGroups: true
+packages:
+  PinterestSegment:
+    path: ..
+targets:
+  PinterestSegmentDemo:
+    type: application
+    platform: iOS
+    sources:
+      - Sources
+    dependencies:
+      - package: PinterestSegment
+        product: PinterestSegment
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.tbxark.PinterestSegment.demo
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
+        SWIFT_VERSION: "5.9"
+        TARGETED_DEVICE_FAMILY: "1,2"
